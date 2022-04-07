@@ -282,6 +282,9 @@ router.post("/confirm-booking", async (req, res) => {
       message: "Booking Confirmed successfully",
     });
   } catch (err) {
+    console.log({
+      err,
+    });
     return res.status(400).json({
       success: false,
       message: "failed",
