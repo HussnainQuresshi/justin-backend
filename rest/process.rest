@@ -1,0 +1,30 @@
+POST http://localhost:3000/process
+Content-Type: application/json
+
+{
+  "destination" : "Solanotesting", 
+  "location":"bay testing",
+  "user":"testing" ,
+  "cpnum":"911111122" ,
+  "NoOfPassengers":2
+}
+###
+DELETE http://localhost:3000/process/61a7c5502b5f9a9560f5cae8
+
+###
+DELETE http://localhost:3000/process
+
+###
+GET http://localhost:3000/process
+
+
+###
+POST http://localhost:3000/driver
+Content-Type: application/json
+
+{
+  "drivername": "testing 3",
+  "driveraddress": "here",
+  "platenumber": "there",
+  "drivercpnum": "+639369062840"
+}
